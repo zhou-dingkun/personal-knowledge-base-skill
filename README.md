@@ -46,7 +46,13 @@ pwsh scripts/init.ps1 -Path "D:\我的知识库"
 bash scripts/init.sh ~/my-kb
 ```
 
-或手工复制 `assets/template/` 到你的目标目录。生成的知识库自带：
+或手工复制 `assets/template/` 到你的目标目录。
+
+### 或者：把「复刻指令」直接发给你的 AI（无需安装任何东西）
+
+把 [`replicate-prompt.md`](replicate-prompt.md) 中 `=== 复刻指令开始 ===` 到 `=== 复刻指令结束 ===` 之间的**全部内容**，一次性发给你自己的 AI agent（DSH / Claude Code / Cursor / Copilot / Codex / Cline…）。它会**逐字复刻**出同款知识库骨架 —— **离线自包含，不依赖网络、不依赖本仓库**。
+
+生成的知识库自带：
 
 - `AGENTS.md`（通用规范，多数 agent 自动加载）+ 各子目录专属规则
 - `CLAUDE.md` / `.github/copilot-instructions.md` / `.cursor/rules/` / `.clinerules/`（各工具入口，全部指向 `AGENTS.md`）
@@ -76,6 +82,7 @@ personal-knowledge-base-skill/
 │   ├── conventions.md       # 细则（frontmatter/命名/标签/工作流/Git/隐私）
 │   └── cross-agent.md       # 各工具安装位置与兼容矩阵
 ├── assets/template/         # 可复制的知识库骨架
+├── replicate-prompt.md      # 一键复刻指令（贴给任意 AI 即可）
 └── scripts/init.ps1 | init.sh
 ```
 
