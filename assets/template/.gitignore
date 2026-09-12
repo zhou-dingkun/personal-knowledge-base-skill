@@ -1,0 +1,32 @@
+# ===== 本机私有 AI 指令覆盖层（自动加载，但不入库）=====
+AGENTS.local.md
+CLAUDE.local.md
+
+# ===== 操作系统 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== Office / 文档临时文件 =====
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# ===== Obsidian 本地工作区（布局与缓存为设备相关）=====
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+
+# ===== 临时与日志 =====
+*.log
+tmp/
+
+# ===== 隐私边界 =====
+# 本库可能含个人证件 / 他人信息。红线：绝不推送到公开/共享仓库、绝不外发。
+# 若选择"敏感材料不入库"，在此加入对应目录，例如：
+# 02-资料库/个人证件/
